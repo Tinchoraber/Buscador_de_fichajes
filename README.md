@@ -24,21 +24,21 @@ FBref con valores de mercado de Transfermarkt.
 - GitHub Pages — hosting gratuito
 
 ## 📁 Estructura del proyecto
-Buscador_de_fichajes/
-│
-├── data/
-│   ├── players_final.csv        ← dataset combinado FBref + Transfermarkt
-│   ├── fbref_stats.csv          ← estadísticas crudas de FBref
-│   ├── players.csv              ← datos de jugadores de Transfermarkt
-│   └── player_valuations.csv   ← historial de valores de mercado
-│
-├── notebooks/
-│   └── 01_preparar_datos.ipynb ← limpieza y combinación de datos
-│
-├── index.html                   ← página principal
-├── style.css                    ← estilos
-└── script.js                    ← lógica y filtros
 
+    Buscador_de_fichajes/
+    │
+    ├── data/
+    │   ├── players_final.csv        ← dataset combinado FBref + Transfermarkt
+    │   ├── fbref_stats.csv          ← estadísticas crudas de FBref
+    │   ├── players.csv              ← datos de jugadores de Transfermarkt
+    │   └── player_valuations.csv   ← historial de valores de mercado
+    │
+    ├── notebooks/
+    │   └── 01_preparar_datos.ipynb ← limpieza y combinación de datos
+    │
+    ├── index.html                   ← página principal
+    ├── style.css                    ← estilos
+    └── script.js                    ← lógica y filtros
 ## 📊 Dataset
 Los datos fueron obtenidos y procesados con Python:
 - **FBref** via librería `soccerdata` → estadísticas temporada 2024-2025
