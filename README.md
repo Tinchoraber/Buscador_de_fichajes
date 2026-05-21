@@ -48,8 +48,8 @@ El proceso de limpieza y combinación está documentado en el notebook
 `01_preparar_datos.ipynb`.
 
 ## 📌 Ligas incluidas
-- 🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier League
-- 🇪🇸 La Liga
-- 🇩🇪 Bundesliga
-- 🇮🇹 Serie A
-- 🇫🇷 Ligue 1
+- Premier League
+- La Liga
+- Bundesliga
+- Serie A
+- Ligue 1
