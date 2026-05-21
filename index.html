@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scouting Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>⚽ Scouting Dashboard</h1>
+        <p>Encontrá el jugador ideal para tu equipo</p>
+    </header>
+
+    <main>
+        <!-- FILTROS -->
+        <section class="filtros">
+            <h2>Filtros de búsqueda</h2>
+            <div class="filtros-grid">
+                <div class="filtro-grupo">
+                    <label>Posición</label>
+                    <select id="filtro-posicion">
+                        <option value="">Todas</option>
+                        <option value="Attack">Delantero</option>
+                        <option value="Midfield">Mediocampista</option>
+                        <option value="Defender">Defensor</option>
+                        <option value="Goalkeeper">Arquero</option>
+                    </select>
+                </div>
+                <div class="filtro-grupo">
+                    <label>Liga</label>
+                    <select id="filtro-liga">
+                        <option value="">Todas</option>
+                        <option value="ENG-Premier League">Premier League</option>
+                        <option value="ESP-La Liga">La Liga</option>
+                        <option value="GER-Bundesliga">Bundesliga</option>
+                        <option value="ITA-Serie A">Serie A</option>
+                        <option value="FRA-Ligue 1">Ligue 1</option>
+                    </select>
+                </div>
+                <div class="filtro-grupo">
+                    <label>Edad máxima</label>
+                    <input type="number" id="filtro-edad" placeholder="Ej: 25" min="16" max="45">
+                </div>
+                <div class="filtro-grupo">
+                    <label>Presupuesto máximo (€)</label>
+                    <input type="number" id="filtro-presupuesto" placeholder="Ej: 50000000" min="0">
+                </div>
+                <div class="filtro-grupo">
+                    <label>Mínimo de goles</label>
+                    <input type="number" id="filtro-goles" placeholder="Ej: 5" min="0">
+                </div>
+                <div class="filtro-grupo">
+                    <label>Mínimo de asistencias</label>
+                    <input type="number" id="filtro-asistencias" placeholder="Ej: 3" min="0">
+                </div>
+            </div>
+            <button id="btn-buscar">🔍 Buscar jugadores</button>
+            <button id="btn-limpiar">✖ Limpiar filtros</button>
+        </section>
+
+        <!-- RESULTADOS -->
+        <section class="resultados">
+            <h2>Resultados <span id="contador"></span></h2>
+            <div class="tabla-container">
+                <table id="tabla-jugadores">
+                    <thead>
+                        <tr>
+                            <th>Jugador</th>
+                            <th>Club</th>
+                            <th>Liga</th>
+                            <th>Posición</th>
+                            <th>Edad</th>
+                            <th>Goles</th>
+                            <th>Asistencias</th>
+                            <th>Partidos</th>
+                            <th>Valor (€M)</th>
+                            <th>Fin contrato</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla-body">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

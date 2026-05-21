@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0d1117;
+    color: #e6edf3;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(135deg, #1a3a2a, #0d5c2e);
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 2px solid #238636;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #3fb950;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: #8b949e;
+    font-size: 1rem;
+}
+
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* FILTROS */
+.filtros {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.filtros h2 {
+    color: #3fb950;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.filtros-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.filtro-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.filtro-grupo label {
+    font-size: 0.85rem;
+    color: #8b949e;
+    font-weight: 500;
+}
+
+.filtro-grupo select,
+.filtro-grupo input {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    color: #e6edf3;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.filtro-grupo select:focus,
+.filtro-grupo input:focus {
+    border-color: #3fb950;
+}
+
+button {
+    padding: 0.6rem 1.5rem;
+    border-radius: 6px;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+#btn-buscar {
+    background: #238636;
+    color: white;
+    margin-right: 0.75rem;
+}
+
+#btn-buscar:hover {
+    background: #2ea043;
+}
+
+#btn-limpiar {
+    background: #21262d;
+    color: #e6edf3;
+    border: 1px solid #30363d;
+}
+
+#btn-limpiar:hover {
+    background: #30363d;
+}
+
+/* TABLA */
+.resultados {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.resultados h2 {
+    color: #3fb950;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+#contador {
+    color: #8b949e;
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.tabla-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+thead th {
+    background: #0d1117;
+    color: #8b949e;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #30363d;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+thead th:hover {
+    color: #3fb950;
+}
+
+tbody tr {
+    border-bottom: 1px solid #21262d;
+    transition: background 0.15s;
+}
+
+tbody tr:hover {
+    background: #1c2128;
+    cursor: pointer;
+}
+
+tbody td {
+    padding: 0.75rem 1rem;
+    white-space: nowrap;
+}
+
+.valor-mercado {
+    color: #3fb950;
+    font-weight: 500;
+}
+
+.badge-liga {
+    background: #21262d;
+    border: 1px solid #30363d;
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-size: 0.8rem;
+}
